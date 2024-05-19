@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Add Officer</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>{{ form.first_name.label }}<br>{{ form.first_name(size=32) }}</p>
+        <p>{{ form.last_name.label }}<br>{{ form.last_name(size=32) }}</p>
+        <p>{{ form.dob.label }}<br>{{ form.dob(size=32) }}</p>
+        <p>{{ form.license_type.label }}<br>{{ form.license_type() }}</p>
+        <p>{{ form.expiration_date.label }}<br>{{ form.expiration_date(size=32) }}</p>
+        <p>{{ form.closest_major_city.label }}<br>{{ form.closest_major_city(size=32) }}</p>
+        <p>{{ form.address.label }}<br>{{ form.address(size=32) }}</p>
+        <p>{{ form.city.label }}<br>{{ form.city(size=32) }}</p>
+        <p>{{ form.zip_code.label }}<br>{{ form.zip_code(size=32) }}</p>
+        <p>{{ form.email.label }}<br>{{ form.email(size=32) }}</p>
+        <p>{{ form.phone.label }}<br>{{ form.phone(size=32) }}</p>
+        <p>{{ form.dps_id.label }}<br>{{ form.dps_id(size=32) }}</p>
+        <p>{{ form.equipment_inventory.label }}<br>{{ form.equipment_inventory(rows=4, cols=32) }}</p>
+        <p><input type="submit" value="Add Officer"></p>
+    </form>
+{% endblock %}

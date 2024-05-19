@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Admin Dashboard</h2>
+    <p>Welcome, {{ current_user.username }}! Here you can manage the application.</p>
+    <ul>
+        <li><a href="{{ url_for('officers') }}">Manage Officers</a></li>
+        <li><a href="{{ url_for('companies') }}">Manage Companies</a></li>
+        <li><a href="{{ url_for('jobs') }}">Manage Job Postings</a></li>
+    </ul>
+{% endblock %}

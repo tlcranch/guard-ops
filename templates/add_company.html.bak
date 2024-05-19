@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Add Company</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name(size=32) }}
+        </p>
+        <p>
+            {{ form.license_number.label }}<br>
+            {{ form.license_number(size=32) }}
+        </p>
+        <p>
+            {{ form.phone.label }}<br>
+            {{ form.phone(size=32) }}
+        </p>
+        <p>
+            {{ form.email.label }}<br>
+            {{ form.email(size=32) }}
+        </p>
+        <p>
+            {{ form.mailing_address.label }}<br>
+            {{ form.mailing_address(size=32) }}
+        </p>
+        <p>
+            {{ form.point_of_contact.label }}<br>
+            {{ form.point_of_contact(size=32) }}
+        </p>
+        <p>
+            <input type="submit" value="Add Company">
+        </p>
+    </form>
+{% endblock %}
