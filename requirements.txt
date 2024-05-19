@@ -1,0 +1,22 @@
+altgraph==0.17
+future==0.18.2
+numpy==1.19.5
+pandas==1.2.0
+pefile==2019.4.18
+pi==0.1.2
+pyinstaller==4.1
+pyinstaller-hooks-contrib==2020.11
+python-dateutil==2.8.1
+pytz==2020.5
+pywin32-ctypes==0.2.0
+selenium==3.141.0
+six==1.15.0
+urllib3==1.26.7
+
+# Add these Flask dependencies
+Flask==2.0.1
+Flask-WTF==0.15.1
+Flask-Login==0.5.0
+Flask-SQLAlchemy==2.5.1
+gunicorn==20.1.0
+email-validator==1.1.3  # For email validation in forms
