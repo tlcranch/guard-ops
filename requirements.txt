@@ -12,13 +12,11 @@ selenium==3.141.0
 six==1.15.0
 urllib3==1.26.7
 
-# Add these Flask dependencies with compatible versions
 Flask==2.0.1
+gunicorn==20.1.0
 Flask-WTF==0.15.1
 Flask-Login==0.5.0
 Flask-SQLAlchemy==2.5.1
-gunicorn==20.1.0
 email-validator==1.1.3
-Werkzeug==2.0.3  # Use a compatible version of Werkzeug
-SQLAlchemy==1.4.22  # Use a compatible version of SQLAlchemy
+Werkzeug==2.0.3
 numpy==1.21.0
