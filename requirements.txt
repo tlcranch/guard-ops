@@ -22,3 +22,4 @@ gunicorn==20.1.0
 email-validator==1.1.3
 Werkzeug==2.0.3  # Use a compatible version of Werkzeug
 SQLAlchemy==1.4.22  # Use a compatible version of SQLAlchemy
+numpy==1.21.0
